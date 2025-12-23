@@ -18,6 +18,7 @@
       <ul class="nav-menu">
         <li><a href="#about">About</a></li>
         <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#teaching">Teaching</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="cv.html">CV</a></li>
@@ -103,6 +104,47 @@
             </div>
             <div id="abstract3" class="abstract">
               <p>Recognizing actions in still images remains difficult, even if Convolutional Neural Networks (CNNs) have made significant advancements in picture categorization. The main difficulty in recognizing human action from photographs is the lack of visual indications of temporal information in static photos. Presently, the most effective approaches involve training a deep Convolutional Neural Network directly on images for action recognition. Nevertheless, these approaches include numerous parameters and incur substantial computational expenses. Moreover, the majority of existing techniques have utilized supplementary information, such as human body movements, relevant objects, and the visual characteristics of body parts, obtained from photos. These approaches utilize object detection or pose estimation as an auxiliary method in both the training and testing phases. Creating these annotations is a laborious and expensive process. In this paper, we propose a knowledge distillation framework to enhance the process of recognizing actions in still images. This framework uses a technique that employs the discriminative classifier from the pre-trained teacher model for direct usage in student inference. Additionally, we train a student encoder by aligning features using a single ℓ2 loss. Also, self-distillation is employed to enhance the performance of instructor networks, hence leading to an increase in the accuracy of student networks. Our framework achieves a mean Average Precision (mAP) of 96.54% on the Stanford40 dataset, which is the highest performance.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <article class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">AL-YOLO: Accurate and Lightweight Vehicle and Pedestrian Detector</h3>
+            <p class="project-meta">Python | Deep Learning | 2024</p>
+            <p class="project-description">Developed AL-YOLO, an enhanced YOLOv5-based object detection model optimized for foggy weather conditions and resource-constrained devices. The architecture incorporates MobileViTv2 with Inverted Residual Blocks for efficient feature extraction and a C3RFE module in the neck for improved performance in adverse weather. Achieved a 33% reduction in model parameters while increasing mAP by approximately 2% compared to YOLOv5s on the Foggy-Cityscape dataset.</p>
+            <div class="project-tags">
+              <span class="project-tag">YOLOv5</span>
+              <span class="project-tag">Object Detection</span>
+              <span class="project-tag">MobileViT</span>
+              <span class="project-tag">Foggy Weather</span>
+              <span class="project-tag">Computer Vision</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/BehdadSDP/AL-YOLO" class="button"><i class="fab fa-github"></i> Code</a>
+              <a href="https://ieeexplore.ieee.org/document/10874685" class="button"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">ADF4360-5 SPI Controller Implementation</h3>
+            <p class="project-meta">VHDL | SPI Protocol | 2022</p>
+            <p class="project-description">Designed and implemented a VHDL-based SPI controller for the ADF4360-5 Integrated Synthesizer and VCO. The project involved simulating the data transfer protocol according to the device datasheet, implementing the SPI communication interface, and documenting the digital architecture of the frequency synthesizer chip. This was completed as part of a VHDL course at Iran University of Science & Technology under Dr. Mirzakuchaki's supervision.</p>
+            <div class="project-tags">
+              <span class="project-tag">VHDL</span>
+              <span class="project-tag">SPI</span>
+              <span class="project-tag">FPGA</span>
+              <span class="project-tag">Frequency Synthesizer</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Dr-Mirzakuchaki-IUST-TAs/401611184" class="button"><i class="fab fa-github"></i> Code</a>
             </div>
           </div>
         </article>
