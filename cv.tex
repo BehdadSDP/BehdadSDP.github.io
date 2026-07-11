@@ -1,0 +1,247 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[explicit]{titlesec}
+\usepackage{tabularx}
+\usepackage{xcolor}
+
+\definecolor{linkcolor}{rgb}{0,0,0.5}
+\definecolor{sectionbg}{HTML}{D9EAD3}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=linkcolor,
+	filecolor=linkcolor,
+	urlcolor=linkcolor,
+	citecolor=linkcolor,
+}
+
+% Section formatting
+\titleformat{\section}[block]{\large\bfseries}{}{0em}{\colorbox{sectionbg}{\makebox[\dimexpr\textwidth-2\fboxsep\relax][l]{\uppercase{#1}}}}
+\titlespacing{\section}{0pt}{12pt}{8pt}
+
+% Global list settings
+\setlist[itemize]{leftmargin=*, itemsep=2pt, parsep=0pt, topsep=2pt}
+\setlist[enumerate]{leftmargin=*, itemsep=6pt, parsep=0pt, topsep=2pt}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+	
+	\begin{center}
+		{\Huge \textbf{Behdad Sadeghian Pour}} \\ \vspace{8pt}
+		\href{mailto:b.sadeghian.p@gmail.com}{b.sadeghian.p@gmail.com} \quad $|$ \quad
+		\href{https://github.com/BehdadSDP}{Github} \quad $|$ \quad
+		\href{https://linkedin.com/in/behdad-sadeghian-pour-911444215}{Linkedin} \quad $|$ \quad
+		\href{https://scholar.google.com/citations?user=UFMWsvYAAAAJ&hl=en}{Google Scholar} \quad $|$ \quad
+		Phone: (+98)935 18 02 586
+	\end{center}
+
+	\section{Educational Background}
+	
+	\textbf{Iran University of Science and Technology (\href{https://www.topuniversities.com/world-university-rankings?region=Asia&countries=ir}{Among the top 4 universities in Iran})} \hfill Tehran, Iran \\
+	M.Sc. Electrical Engineering, Digital Electronic Systems \hfill (2022--2025) \\
+	\textit{School of Electrical Engineering, Iran University of Science and Technology}
+	\begin{itemize}
+		\item \textbf{Thesis:} Improving the Performance of Lightweight Object Detector in Adverse Weather using Deep Learning
+		\item \textbf{Supervised by:} Dr. Shahriar Baradaran Shokouhi
+		\item \textbf{Total GPA:} 4/4 
+	\end{itemize}
+	
+	\vspace{8pt}
+	
+	\textbf{Shahroud University of Technology (SUT)} \hfill Semnan, Iran \\
+	B.Sc. Electrical Engineering, Electronics \hfill (2017--2021) \\
+	\textit{School of Electrical and Electronics Engineering, Shahroud University of Science and Technology}
+	\begin{itemize}
+		\item \textbf{Final Project:} Sensing and Monitoring Temperature using ESP8266 and Android Application
+		\item \textbf{Advised by:} Dr. Mohammad Reza Ashraf
+		\item \textbf{GPA of the Last Two years:} 3.55/4.0
+	\end{itemize}
+	
+	\section{Publications}
+	
+	\begin{enumerate}[label={[\arabic*]}]
+		\item \textbf{A Deep Learning-Enhanced Liquid Crystal Sensor for the Rapid Discrimination of Snake Venoms: A Case Study on Cobra and Viper}, \textit{Sensors and Actuators A: Physical, Elsevier} -- Published -- \href{https://doi.org/10.1016/j.sna.2026.117779}{DoI} \hfill (2026) \\
+		Sahar S. Mousavi Sani, Mohammad Mohammadimasoudi*, \textbf{Behdad Sadeghian Pour}, Mahdi Behdani, Delavar Shahbazzadeh \\
+		\textit{Developed a low-cost liquid crystal sensor on a fabric textile grid to rapidly distinguish cobra and viper venoms. The system utilizes a lightweight MobileNetV3 deep learning model to automatically identify venom-induced visual pattern changes. It achieves a 95\% classification accuracy in just 4 minutes with a detection limit of 45 $\mu$g/mL.}
+		
+		\item \textbf{AL-YOLO: Accurate and Lightweight Vehicle and Pedestrian Detector in Foggy Weather}, \textit{14th International Conference on Computer and Knowledge Engineering, IEEE} -- Published -- \href{https://doi.org/10.1109/ICCKE65377.2024.10874685}{DoI} \hfill (2024) \\
+		\textbf{Behdad Sadeghian Pour}; Hamidreza Mohammadi Jozani; Shahriar Baradaran Shokouhi \\
+		\textit{Introduced AL-YOLO, a lightweight object detector optimized for identifying vehicles and pedestrians in low-visibility foggy weather. By combining Mobile ViTv2 and an Inverted Residual Block, it enhances feature extraction efficiency for resource-constrained devices. The model achieves a 33\% parameter reduction and a 2\% accuracy improvement over YOLOv5s.}
+		
+		\item \textbf{CNN and ViT as Dual Teachers for Knowledge Distillation in Human Action Recognition}, \textit{10th International Conference on Signal Processing \& Intelligent Systems Shahrood University of Technology, IEEE} -- Published -- \href{https://doi.org/10.1109/ICSPIS65223.2024.10931096}{DoI} \hfill (2024) \\
+		Hamidreza Mohammadi Jozani; \textbf{Behdad Sadeghian Pour}; Shahriar B. Shokouhi \\
+		\textit{Proposed a deep learning framework that improves human action recognition in static images using knowledge distillation. A small student model learns from dual teachers—a CNN for local details and a Vision Transformer for global context—integrated via an adaptive loss-aware module. This method achieved a top performance of 95.17\% mean Average Precision on the Stanford40 dataset.}
+		
+		\item \textbf{Knowledge Distillation with Reused Teacher Classifier Framework for Action Recognition in Still Image}, \textit{Preprint} \hfill (2024)
+	\end{enumerate}
+	
+		\section{Professional Background}
+	
+	\textbf{Embedded and AI Systems Engineer}, Pouyesh Tasvir Giti \hfill  March 2025 -- March 2026
+	\begin{itemize}
+		\item Architected and developed a real-time AI platform for autonomous drone object tracking and navigation on Raspberry Pi 5, using a multi-threaded C++ pipeline.
+		\item Converting vision models to ONNX format for implementing on resource-constrained devices.
+		\item Implemented PID-controlled autonomous drone navigation with MAVLink/ArduPilot integration over UART, supporting multiple YOLO-based detection models and pluggable tracker backends.
+		\item ▸ Built a Qt-based real-time monitoring UI with OpenCV, featuring live video overlay with bounding boxes, dead-zone visualization, configurable parameters, and safety mechanisms.
+	\end{itemize}
+	
+	\vspace{8pt}
+	
+	\textbf{Embedded Systems Engineer | Negarin Sanat Asia} \hfill May 2022 -- May 2023
+	\begin{itemize}
+		\item Developed embedded solutions for automotive multimedia systems using microcontrollers.
+		\item Designed electronic circuits and PCBs using Altium Designer.
+		\item Performed hardware testing, debugging, and validation using tools such as oscilloscopes, logic analyzers, and JTAG/SWD debuggers.
+	\end{itemize}
+	
+	\section{Research Interests}
+	
+	\begin{minipage}[t]{0.5\textwidth}
+		\begin{itemize}
+			\item Computer Vision
+			\item Image Processing
+			\item Signal Processing
+		\end{itemize}
+	\end{minipage}%
+	\begin{minipage}[t]{0.5\textwidth}
+		\begin{itemize}
+			\item Deep Learning
+			\item Embedded Device Programming
+			\item Machine Learning
+		\end{itemize}
+	\end{minipage}
+	
+	\vspace{8pt}
+	
+	\section{Skills}
+	
+	\begin{tabularx}{\textwidth}{@{}l X@{}}
+		\textbf{Programming Languages:} & Python, C, C++, VHDL, Verilog, Embedded C \\
+		\textbf{Libraries and Frameworks:} & Pytorch, Keras, TensorFlow, Scikit-Learn, Numpy \\
+		\textbf{Environments and Tools:} & Linux (Ubuntu), Git \\
+		\textbf{Embedded Systems \& Microcontrollers:} & MCUs such as STM32, ESP32, AVR, SAM, PIC \\
+		\textbf{Debugging and embedded tools:} & JTAG, SWD, oscilloscopes, logic analyzers \\
+	\end{tabularx}
+	
+	\section{Selected Specialized Courses}
+	
+	\begin{center}
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabular}{p{8cm} c}
+			\textbf{Enrolled Courses During the Master's Program} & \textbf{WES Score (out of 4)} \\
+			\hline
+			Pattern Recognition & 4.0 \\
+			Machine Vision & 4.0 \\
+			Intelligent System Design & 4.0 \\
+			Digital Signal Processing & 4.0 \\
+			VHDL & 4.0 \\
+		\end{tabular}
+	\end{center}
+	
+	\section{Academic Experience}
+	
+	\textbf{Teaching Assistant - SUT University} \hfill (2021) \\
+	\textit{School of Electrical and Electronics Engineering}
+	\begin{itemize}
+		\item Microprocessor Programming (for Undergraduate Students)
+		\item Instructor: Dr. Hosein Khosravi
+	\end{itemize}
+	
+	\vspace{8pt}
+	
+	\textbf{Teaching Assistant -- IUST University} \hfill (2024) \\
+	\textit{School of Electrical Engineering}
+	\begin{itemize}
+		\item Digital Signal Processing (for Graduate Students)
+		\item Instructor: Dr. Mohammad Hossein Kahaei
+	\end{itemize}
+	
+	\section{Educational Course Projects}
+	
+	\textbf{Pattern Recognition Course Projects - IUST University} \hfill (2024)
+	\begin{itemize}
+		\item Implementation of Crammer-Singer SVM from Scratch -- \href{https://github.com/BehdadSDP/CrammerSinger_SVM}{GitHub}
+		\item Image Classification Using Convolutional Neural Network -- \href{https://github.com/BehdadSDP/pc_03_CNN}{GitHub}
+	\end{itemize}
+	
+	\vspace{8pt}
+	
+	\textbf{VHDL Course Project - IUST University} \hfill (2023)
+	\begin{itemize}
+		\item Simulation of the data transfer protocol of the Integrated Synthesizer and VCO (ADF4360-5) -- \href{https://github.com/BehdadSDP/401611184_Project_File}{GitHub}
+	\end{itemize}
+	
+	\vspace{8pt}
+	
+	\textbf{Digital Signal Processing Course Projects - IUST University} \hfill (2023)
+	\begin{itemize}
+		\item Implementation of a median filter on TMS320C6416 digital signal processor
+	\end{itemize}
+		\section{Languages}
+	
+	\begin{itemize}
+		\item \textbf{Persian:} Native
+		\item \textbf{English:} 
+	\end{itemize}
+	
+	\vspace{4pt}
+	\begin{center}
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabular}{c c c c}
+			\textbf{Exam} & \multicolumn{2}{c}{\textbf{Overall Band Score}} & \textbf{Test Date} \\
+			\hline
+			CD IELTS & \multicolumn{2}{c}{7.0} & 26/DEC/2024 \\
+			\hline
+			\textbf{Reading} & \textbf{Listening} & \textbf{Speaking} & \textbf{Writing} \\
+			8.0 & 6.0 & 7.0 & 6.5 \\
+		\end{tabular}
+	\end{center}
+	
+	\vspace{8pt}
+	\section{Honors \& Certificates}
+	
+	\textbf{Ranked in Top 1\% in the University Entrance Examination} for \hfill (2022) \\
+	Entering the Graduate Program
+	
+	\vspace{8pt}
+	
+	\textbf{Deep Neural Networks with Pytorch} \hfill (2022)
+	\begin{itemize}
+		\item Certificate on \href{\#}{Coursera}
+		\item Covers many topics in Neural Networks, Deep Learning, Regression and Human Learning.
+	\end{itemize}
+	
+	\vspace{8pt}
+	
+	\textbf{Digital Design using FPGA} \hfill (2023)
+	\begin{itemize}
+		\item Covers many Topics in FPGA using VHDL
+	\end{itemize}
+	
+	\section{References}
+	
+	\begin{minipage}[t]{0.5\textwidth}
+		\textbf{Dr. Shahriar Baradaran Shokouhi} \\
+		Professor, School of Electrical Engineering \\
+		Iran University of Science and Technology (IUST) \\
+		Email: \href{mailto:bshokouhi@iust.ac.ir}{bshokouhi@iust.ac.ir} \\
+		Faculty Profile: \href{https://its.iust.ac.ir/profile/en/bshokouhi}{IUST Profile Link} \\
+		Scholar Profile: \href{https://scholar.google.com/citations?user=sMPEoRcAAAAJ&hl=en}{Google Scholar Link} \\
+		Relationship: M.Sc. Supervisor
+	\end{minipage}
+	\begin{minipage}[t]{0.5\textwidth}
+		\textbf{Mohammadreza Mostafavi} \\
+		Ph.D. Candidate, Department of Electrical \\
+		and Computer Engineering \\
+		University of Saskatchewan \\
+		Email: \href{mailto:tpo186@usask.ca}{tpo186@usask.ca} \\
+		Scholar Profile: \href{https://scholar.google.com/citations?user=sMPEoRcAAAAJ&hl=en}{Google Scholar Link} \\
+		Relationship: Research Mentor
+	\end{minipage}%
+	
+\end{document}
